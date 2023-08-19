@@ -27,11 +27,11 @@ You might need to change them to allow hardware acceleration on your machine. Se
 
 2. `DATA_ROOT` has to be writable by everyone. `sudo chmod -R 777 *` should do the trick.
 
-3. `docker compose up` to start. Homepage is at `http://localhost`.
+3. `docker compose up` to start. Homepage is at `http://HOSTNAME`.
 
 4. Configure SABnzbd
 	- Use IP insead of hostname (`127.0.0.1:8080` if running locally) just for the setup.
-	- After going through the guided setup, go to "Config" -> Special and to `host_whitelist (  )` add `..., your_hostname, sabnzbd` (comma separated). "Save Changes" and "Restart SABnzbd". You can see details at https://sabnzbd.org/wiki/extra/hostname-check.html.
+	- After going through the guided setup, go to "Config" -> Special and to "host_whitelist (  )" add `your_hostname, sabnzbd` to the existing value (comma separated). "Save Changes" and "Restart SABnzbd". You can see details at https://sabnzbd.org/wiki/extra/hostname-check.html.
 	- Get API key from "Config" -> "General", set `SABNZBD_API_KEY` in `.env`.
 2. Configure Radarr
 	- Go to `http://HOSTNAME:7878`
