@@ -1,10 +1,11 @@
 ## Info
 
 Based on https://github.com/AdrienPoupa/docker-compose-nas, but many changes were made:
-	- Setup for Usenet, not torrents
-	- Setup for LAN
-	- No reverse proxy (traefik)
-	- No VPN container
+
+- Setup for Usenet, not torrents
+- Setup for LAN
+- No reverse proxy (traefik)
+- No VPN container
 
 You can modify the setup to use torrents, by removing SABnzbd and adding qBittorrent and an indexer like Prowlarr. See https://github.com/AdrienPoupa/docker-compose-nas for the torrent setup.
 
