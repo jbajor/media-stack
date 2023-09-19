@@ -69,6 +69,7 @@ services:
       - homepage.description=Usenet
       - homepage.weight=1
       - homepage.widget.type=sabnzbd
+      - homepage.widget.url=http://${HOSTNAME}:8080
       - homepage.widget.key=${SABNZBD_API_KEY}
   jellyfin:
     image: lscr.io/linuxserver/jellyfin:latest
